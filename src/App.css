@@ -464,28 +464,185 @@
 
 /* ── Responsive ──────────────────────────────────── */
 
-@media (max-width: 680px) {
+/* Tablet / large phone (≤ 720px) */
+@media (max-width: 720px) {
+  .game-header {
+    padding: 1.2rem 1rem 1rem;
+  }
+
+  .game-title {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+    letter-spacing: 0.25em;
+  }
+
+  .game-subtitle {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+
   .game-content {
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    padding: 1.5rem 1rem;
+    gap: 1.2rem;
+    padding: 1.2rem 1rem;
   }
 
+  /* Hangman row: drawing left, lives right */
   .left-panel {
     flex-direction: row;
-    align-items: flex-end;
-    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    width: 100%;
+  }
+
+  .hangman-card {
+    padding: 0.75rem;
   }
 
   .hangman-svg {
-    width: 140px;
-    height: 180px;
+    width: 150px;
+    height: 195px;
+  }
+
+  .right-panel {
+    gap: 1.2rem;
+    width: 100%;
+  }
+
+  .hint-box {
+    padding: 0.5rem 0.9rem;
+  }
+
+  .status-banner {
+    padding: 0.75rem 1rem;
+  }
+
+  .status-text {
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+  }
+
+  .letter-char {
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
+    height: 2.1rem;
+    min-width: 1.3rem;
+  }
+
+  .word-display {
+    gap: 0.45rem;
   }
 
   .key {
     width: 34px;
+    height: 36px;
+    font-size: 0.8rem;
+  }
+
+  .keyboard-row {
+    gap: 0.3rem;
+  }
+
+  .keyboard {
+    gap: 0.35rem;
+  }
+
+  .new-game-btn {
+    width: 100%;
+    padding: 0.85rem 1rem;
+  }
+}
+
+/* Small phone (≤ 430px) */
+@media (max-width: 430px) {
+  .game-header {
+    padding: 0.9rem 0.75rem 0.8rem;
+  }
+
+  .game-title {
+    font-size: clamp(1.6rem, 11vw, 2.2rem);
+    letter-spacing: 0.18em;
+  }
+
+  .brand-tag {
+    font-size: 0.72rem;
+  }
+
+  .game-content {
+    padding: 1rem 0.75rem;
+    gap: 1rem;
+  }
+
+  /* Stack hangman above lives on very small screens */
+  .left-panel {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .hangman-svg {
+    width: 130px;
+    height: 170px;
+  }
+
+  .lives-display {
+    flex-direction: row;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .lives-label {
+    font-size: 0.65rem;
+  }
+
+  .hint-text {
+    font-size: 0.82rem;
+  }
+
+  .word-display {
+    gap: 0.35rem;
+  }
+
+  .letter-char {
+    font-size: clamp(1.1rem, 6.5vw, 1.5rem);
+    height: 1.9rem;
+    min-width: 1.1rem;
+  }
+
+  .key {
+    width: 30px;
     height: 34px;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
+    border-radius: 5px;
+  }
+
+  .keyboard-row {
+    gap: 0.22rem;
+  }
+
+  .keyboard {
+    gap: 0.28rem;
+  }
+
+  .status-text {
+    font-size: 1rem;
+    letter-spacing: 0.18em;
+  }
+}
+
+/* Extra-small (≤ 360px — e.g. Galaxy S series) */
+@media (max-width: 360px) {
+  .key {
+    width: 27px;
+    height: 32px;
+    font-size: 0.65rem;
+  }
+
+  .keyboard-row {
+    gap: 0.18rem;
+  }
+
+  .letter-char {
+    font-size: clamp(1rem, 7vw, 1.3rem);
+    min-width: 1rem;
   }
 }
