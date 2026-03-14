@@ -1,0 +1,38 @@
+:root {
+  /* FON Hakaton dark theme */
+  --bg: #07040f;
+  --bg-2: #0e0a1e;
+  --text: #c4b5fd;
+  --text-h: #ede9fe;
+  --accent: #8b5cf6;
+  --accent-bg: rgba(139, 92, 246, 0.12);
+  --accent-border: rgba(139, 92, 246, 0.4);
+  --mono: ui-monospace, 'Cascadia Code', Consolas, 'Courier New', monospace;
+
+  font: 16px/1.5 system-ui, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(160deg, #0e0a1e 0%, #07040f 50%, #0b0517 100%);
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
