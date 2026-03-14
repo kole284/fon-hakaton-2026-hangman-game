@@ -2,15 +2,15 @@
 import './App.css'
 
 const WORDS: { word: string; hint: string }[] = [
-  { word: 'HAKATON', hint: 'Programersko takmičenje' },
+  { word: 'HAKATON', hint: 'Programersko takmičenje' },
   { word: 'ALGORITAM', hint: 'Niz koraka za rešavanje problema' },
-  { word: 'PROGRAM', hint: 'Instrukcije za računar' },
-  { word: 'SERVER', hint: 'Računar koji pruža usluge mreži' },
-  { word: 'INTERNET', hint: 'Globalna računarska mreža' },
-  { word: 'SOFTVER', hint: 'Nematerijalni deo računara' },
-  { word: 'APLIKACIJA', hint: 'Korisnički program' },
+  { word: 'PROGRAM', hint: 'Instrukcije za računar' },
+  { word: 'SERVER', hint: 'Računar koji pruža usluge mreži' },
+  { word: 'INTERNET', hint: 'Globalna računarska mreža' },
+  { word: 'SOFTVER', hint: 'Nematerijalni deo računara' },
+  { word: 'APLIKACIJA', hint: 'Korisnički program' },
   { word: 'INOVACIJA', hint: 'Novo rešenje ili ideja' },
-  { word: 'TAKMICENJE', hint: 'Nadmetanje učesnika' },
+  { word: 'TAKMICENJE', hint: 'Nadmetanje učesnika' },
   { word: 'PROGRAMER', hint: 'Osoba koja piše kod' },
   { word: 'KODIRANJE', hint: 'Pisanje izvornog koda' },
   { word: 'KOMPAJLER', hint: 'Prevodi kod u izvršni fajl' },
@@ -30,7 +30,7 @@ const WORDS: { word: string; hint: string }[] = [
   { word: 'PROJEKAT', hint: 'Organizovani zadatak' },
   { word: 'BLOCKCHAIN', hint: 'Decentralizovana baza podataka' },
   { word: 'BAZA', hint: 'Organizovana kolekcija podataka' },
-  { word: 'MREZA', hint: 'Povezani računarski sistemi' },
+  { word: 'MREZA', hint: 'Povezani računarski sistemi' },
   { word: 'BEZBEDNOST', hint: 'Zaštita sistema od napada' },
 ]
 
